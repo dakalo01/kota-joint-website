@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Kota Joint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /*Copy all the css styling in here and put it in a different style.css*/
+    /*I didn't create a separate style.css because i dont understand how you code or how you want it*/
+    /*You can also copy and paste into the style.css file or style2.css just make sure to change class names to avoid conflicts with other styles having similar names*/ 
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff3ed;
+      color: #333;
+    }
+
+    nav {
+      background-color: #d84315;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: #bf360c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #a83400;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact, .content {
+      flex: 1 1 400px;
+    }
+
+    .contact h1, .content h1 {
+      font-size: 32px;
+      color: #d84315;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #fffaf6;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #d84315;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #bf360c;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    strong {
+      color: #000;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="container">
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Submit Message</button>
+      </form>
+    </div>
+
+    <div class="content">
+      <h1>Kota Joint</h1>
+      <p>
+        If you have any questions or need assistance, please don't hesitate to contact us using the information provided below. We're here to help you!
+      </p>
+
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> kotajoint@gmail.com</p>
+      <p><strong>Phone:</strong> 011 5768 7889</p>
+      <p><strong>Address:</strong><br/>Black Locust Street<br/>Soweto, Protea Glen<br/>1819 14490/7</p>
+    </div>
+  </div>
+</body>
+</html>

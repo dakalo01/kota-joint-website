@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Kota Joint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /*Copy all the css styling in here and put it in a different style.css*/
+    /*I didn't create a separate style.css because i dont understand how you code or how you want it*/
+    /*You can also copy and paste into the style.css file or style2.css just make sure to change class names to avoid conflicts with other styles having similar names*/ 
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff3ed;
+      color: #333;
+    }
+
+    nav {
+      background-color: #d84315;
+      padding: 16px 32px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: #bf360c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #a83400;
+    }
+
+    .menu-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #d84315;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card-price {
+      font-weight: bold;
+      font-size: 18px;
+      color: #d84315;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="menu-container">
+    <h1>Our Menu</h1>
+
+    <div class="grid">
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Classic Kota" />
+        <div class="card-content">
+          <div class="card-title">Classic Kota</div>
+          <div class="card-desc">French fries, polony, cheese, egg & chutney stuffed into a quarter loaf.</div>
+          <div class="card-price">R35</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-crumbed-chicken-kota.jpg" alt="Deluxe Kota" />
+        <div class="card-content">
+          <div class="card-title">Deluxe Kota</div>
+          <div class="card-desc">Add vienna, russian & grilled chicken to the classic mix for extra flavour.</div>
+          <div class="card-price">R50</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-burrito-kota.jpg" alt="Cheesy Kota" />
+        <div class="card-content">
+          <div class="card-title">Cheesy Lover&apos;s Kota</div>
+          <div class="card-desc">Smothered in melted cheese, topped with eggs, polony & sauces.</div>
+          <div class="card-price">R45</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/ht_kota_new.jpg" alt="Mix Kota" />
+        <div class="card-content">
+          <div class="card-title">Mix Kota</div>
+          <div class="card-desc">Perfect combo of chips, steak, polony, vienna, russians & sauce.</div>
+          <div class="card-price">R55</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Veggie Kota</div>
+          <div class="card-desc">Loaded with fresh grilled veggies, spicy beans & tangy sauce.</div>
+          <div class="card-price">R30</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Classic Kota" />
+        <div class="card-content">
+          <div class="card-title">Classic Kota</div>
+          <div class="card-desc">French fries, polony, cheese, egg & chutney stuffed into a quarter loaf.</div>
+          <div class="card-price">R35</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-crumbed-chicken-kota.jpg" alt="Deluxe Kota" />
+        <div class="card-content">
+          <div class="card-title">Deluxe Kota</div>
+          <div class="card-desc">Add vienna, russian & grilled chicken to the classic mix for extra flavour.</div>
+          <div class="card-price">R50</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-burrito-kota.jpg" alt="Cheesy Kota" />
+        <div class="card-content">
+          <div class="card-title">Cheesy Lover&apos;s Kota</div>
+          <div class="card-desc">Smothered in melted cheese, topped with eggs, polony & sauces.</div>
+          <div class="card-price">R45</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/ht_kota_new.jpg" alt="Mix Kota" />
+        <div class="card-content">
+          <div class="card-title">Mix Kota</div>
+          <div class="card-desc">Perfect combo of chips, steak, polony, vienna, russians & sauce.</div>
+          <div class="card-price">R55</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Veggie Kota</div>
+          <div class="card-desc">Loaded with fresh grilled veggies, spicy beans & tangy sauce.</div>
+          <div class="card-price">R30</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/ht_kota_new.jpg" alt="Mix Kota" />
+        <div class="card-content">
+          <div class="card-title">Mix Kota</div>
+          <div class="card-desc">Perfect combo of chips, steak, polony, vienna, russians & sauce.</div>
+          <div class="card-price">R55</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Veggie Kota</div>
+          <div class="card-desc">Loaded with fresh grilled veggies, spicy beans & tangy sauce.</div>
+          <div class="card-price">R30</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
