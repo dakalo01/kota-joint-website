@@ -1,174 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to kota joint</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kota Joint | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff3ed;
+      color: #333;
+    }
+
+    nav {
+      background-color: #d84315;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+.hero {
+  position: relative;
+  padding: 120px 20px 100px;
+  background-image: url('pictures/ht_kota_new.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero a {
+  padding: 12px 24px;
+  background-color: #ff7043;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero a:hover {
+  background-color: #bf360c;
+}
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: #d84315;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-preview p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about-preview a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #d84315;
+      text-decoration: underline;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card-price {
+      font-weight: bold;
+      color: #d84315;
+    }
+
+    footer {
+      background-color: #d84315;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <section class="menu">
-        <div class="nav">
-            <div class="logo"><h1>Kota<b>Joint</b></h1></div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="active">Menu</a></li>
-                <li><a href="#">contact us</a></li>
-                <li><a href="#">About us</a></li>
-            
-            </ul>
-            <div>
-                <input class="signin" type="submit" value="sign In" name="signin">
-                <input class="signup"  type="submit" value="sign Up" name="signup">
 
-            </div>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Kota Joint</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contactus.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to Kota Joint</h1>
+    <p>The heart of Soweto&apos;s street food — hearty, bold, and proudly local. Discover the best kotas in town, made with love and loaded with flavour.</p>
+    <a href="menu.html">Explore Our Menu</a>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section about-preview">
+    <h2>About Us</h2>
+    <p>Kota Joint is more than just a food stop. We're a community hub in Soweto, serving up traditional South African kotas while empowering youth through local entrepreneurship.</p>
+    <a href="aboutus.html">Learn More About Us</a>
+  </section>
+
+  <!-- Popular Kotas Preview -->
+  <section class="section">
+    <h2>Popular Dishes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Classic Kota" />
+        <div class="card-content">
+          <div class="card-title">Classic Kota</div>
+          <p class="description">Stuffed with polony, egg, Russian, chips, cheese, and a generous layer of chutney.</p>
+          <div class="card-price">R35</div>
         </div>
-    </section>
-    <section class="grid">
-<div class="content">
-<div class="content-left">
-<div class="info">
-<h2>Looking for great food<br>order here</h2>
-<p>we often a variety of options that suit every individual preferences,
-kota joint reflects the vibrant,diverse culture of soweto,
- as a meeting point for friends and families to enjoy hearty,comforting food .</p>
-            </div>
-            <button>Explore our Kota's</button>
-            </div>
-            <div class="content-right">
-                <img src="pictures/2.png" width="400" height="auto">
-            </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-crumbed-chicken-kota.jpg" alt="Deluxe Kota" />
+        <div class="card-content">
+          <div class="card-title">Deluxe Kota</div>
+          <p class="description">Melty cheese, spicy sausage, chips, and tangy sauces packed into a fresh quarter loaf.</p>
+          <div class="card-price">R50</div>
         </div>
-    </section>
-    <section class="category">
-        <div class="list-items">
-            <h3>popular dishes</h3>
-            <div class="card-list">
-                <div class="card">
-                    <img src="pictures/veggie_kota.jpg" alt="">
-                    <div class="food-title">
-                        <h1>Veggie Kota</h1>
-                    </div>
-                    <div class="desc-food">
-                        <p>1 Medium Aubergine (sliced)
+      </div>
 
-                            Salt & pepper
-                            
-                            60ml Flour
-                            
-                            1 Egg (beaten)
-                            
-                            60ml Breadcrumbs
-                            
-                            ½ Onion (sliced)
-                            
-                            1 TBSP Oil
-                            
-                            1 tsp Coriander Seeds
-                            
-                            30ml White Wine Vinegar
-                            
-                            60ml Mayonnaise
-                            
-                            30ml Honey
-                            
-                            1 TBSP Wholegrain Mustard
-                            
-                            1 medium Avocado (sliced)</p>
-                    <br>
-                    <div class="price">
-                        <span>R75</span>    
-                </div>
-                </div>
-
-                </div>
-            
-                        <div class="card">
-                            <img src="pictures/standaat_kota.jpg" alt="">
-                            <div class="food-title">
-                                <h1>standaatkota</h1>
-                            </div>
-                            <div class="desc-food">
-                                <p>
-                                <p>
-                                    3 Cups Harvestime Chips
-
-                                    80ml White Vinegar
-                                    
-                                    1 Whole White Bread
-                                    
-                                    50g Butter or Margarine
-                                    
-                                    500g Streaky Bacon and any sausage of your choosing
-                                    
-                                    400g Achar
-                                    
-                                    100g Iceberg Lettuce, Thinly Shredded
-                                    
-                                    2 Tomatoes, Thick Slices   
-                            </p>
-                            <br>
-                            <div class="price">
-                                <span>R75</span>
-                            </div>
-                </div>
-                        </div>
-                <div class="card">
-                    <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="">
-                    <div class="food-title">
-                        <h1>Beef kota</h1>
-                    </div>
-                    <div class="desc-food">
-                        <p>500g Beef Ribs
-                            1 TBSP BBQ Spice
-                            1 tsp Paprika
-                            Salt and pepper
-                            900ml Beef stock
-                            ½ cup Tomato sauce
-                            ½ cup Sweet Chilli sauce
-                            ¼ cup Worcestershire sauce
-                            2 Rashes Bacon
-                            1 cup Flour
-                            1 tsp baking Powder
-                            ½ cup Ice Cold Water
-                            1 Onion
-                            
-                        </p>
-                    <br>
-                    <div class="price">
-                        <span>R75</span>
-                    </div>
-            </div>
-                </div>
-            <div class="card">
-                <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="">
-                <div class="food-title">
-                    <h1>Beef kota</h1>
-                </div>
-                <div class="desc-food">
-                    <p>500g Beef Ribs
-                        1 TBSP BBQ Spice
-                        1 tsp Paprika
-                        Salt and pepper
-                        900ml Beef stock
-                        ½ cup Tomato sauce
-                        ½ cup Sweet Chilli sauce
-                        ¼ cup Worcestershire sauce
-                        2 Rashes Bacon
-                        1 cup Flour
-                        1 tsp baking Powder
-                        ½ cup Ice Cold Water
-                        1 Onion
-                        
-                    </p>
-                <br>
-                <div class="price">
-                    <span>R75</span>
-                </div>
+      <div class="card">
+        <img src="pictures/harvestime-burrito-kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Veggie Kota</div>
+          <p class="description">Stuffed with polony, egg, Russian, chips, cheese, and a generous layer of chutney.</p>
+          <div class="card-price">R30</div>
         </div>
-    
+      </div>
 
+      <div class="card">
+        <img src="pictures/ht_kota_new.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Premium Kota</div>
+          <p class="description">A delicious meat-free alternative loaded with grilled veggies, cheese, and signature sauces.</p>
+          <div class="card-price">R200</div>
         </div>
-    </section>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-crumbed-chicken-kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Superstar Kota</div>
+          <p class="description">Melty cheese, spicy sausage, chips, and tangy sauces packed into a fresh quarter loaf.</p>
+          <div class="card-price">R130</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/harvestime-beef_bbq_rib_kota.jpg" alt="Veggie Kota" />
+        <div class="card-content">
+          <div class="card-title">Elite Kota</div>
+          <p class="description">A delicious meat-free alternative loaded with grilled veggies, cheese, and signature sauces.</p>
+          <div class="card-price">R90</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kota Joint. All rights reserved. | Soweto, South Africa</p>
+  </footer>
+
 </body>
 </html>
