@@ -316,3 +316,81 @@ body {
     color: #d84315;
     margin-top: auto;
   }
+/* contact us page*/
+.contact-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact, .content {
+  flex: 1 1 400px;
+}
+
+.contact h1, .content h1 {
+  font-size: 32px;
+  color: #d84315;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fffaf6;
+}
+
+.contact-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-button {
+  padding: 14px;
+  background-color: #d84315;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #bf360c;
+}
+
+.contact-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-content h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+strong {
+  color: #000;
+}
