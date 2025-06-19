@@ -9,12 +9,49 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
+  <!-- Navbar -->
+  <nav class="home-navbar">
+    <div class="logo">
+      <a href="index.html">Kota Joint</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contactus.html">Contact</a>
+    </div>
   </nav>
 
   <div class="menu-container">
     <h1 class="menu-h1">Our Menu</h1>
+
+    <div class="search-bar" style="margin-bottom: 1rem; text-align: center;">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a Kota..."
+        style="padding: 0.5rem; width: 60%; max-width: 400px; border: 1px solid #ccc; border-radius: 4px;"
+      />
+    </div>
+
+    <div class="filter-sort-controls" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+  <select id="filterSelect" style="padding: 0.5rem; border-radius: 4px;">
+    <option value="all">All</option>
+    <option value="classic">Classic Kota</option>
+    <option value="deluxe">Deluxe Kota</option>
+    <option value="cheesy">Cheesy Lover's Kota</option>
+    <option value="mix">Mix Kota</option>
+    <option value="veggie">Veggie Kota</option>
+  </select>
+
+  <select id="sortSelect" style="padding: 0.5rem; border-radius: 4px;">
+    <option value="default">Sort by Price</option>
+    <option value="low-to-high">Low to High</option>
+    <option value="high-to-low">High to Low</option>
+  </select>
+</div>
+
 
     <div class="menu-grid">
       <div class="menu-card">
@@ -128,5 +165,7 @@
     </div>
   </div>
 
+
+<script src="script.js"></script>
 </body>
 </html>
